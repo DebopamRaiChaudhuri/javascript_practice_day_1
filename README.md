@@ -16,3 +16,6 @@ This repository contains my Day 1 JavaScript practice.
 
 ## Goal
 Building strong fundamentals before moving to advanced JavaScript and full-stack development.
+
+## Next
+Control flow (if-else), conditions, real-world logic
