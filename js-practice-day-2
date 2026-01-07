@@ -1,0 +1,67 @@
+
+// Age eligibility checker
+const prompt = require("prompt-sync")();
+let n = prompt("Please Enter Your Age: "); // n is a string
+
+n = parseInt(n); // Convert string to number for proper comparison
+
+if (n >= 21) {
+    console.log("You are eligible to drink alcohol Everywhere");
+} else if (n < 21 && n >= 16) {
+    console.log("You're eligible to drink alcohol in Europe");
+} else {
+    console.log("You are not eligible to drink alcohol Anywhere");
+}
+
+// Swith case car manufacther checker
+
+const prompt = require("prompt-sync")();
+let car = prompt("Please Enter Your Car Name: ");
+
+car = car.toLowerCase(); // Convert input to lowercase for consistent comparison
+switch (car) {
+    case "mercedes":
+        console.log ("This car is manufactherd in Germany");
+        break;
+        case "Renault":
+        console.log ("This car is manufactherd in France");
+        break;
+        case "ferrari":
+        console.log ("This car is manufactherd in Italy");
+        break;
+default:
+    console.log("Unknown Car Manufacther");
+    break;
+    }
+Pass/fail checker
+    const prompt = require("prompt-sync")();
+    let marks = prompt("Please Enter Your Marks: ");
+
+marks = parseInt(marks); // Convert string to number for proper comparison
+if (marks <25) {
+    console.log("You  have failed the exam");
+} else {
+    console.log("Congratulations! You have passed the exam");
+}
+
+// Login system with nested conditions
+
+const prompt = require("prompt-sync")();
+let userid = prompt("Please Enter Your User ID: ");
+let password = prompt("Please Enter Your Password: ");
+
+if (userid === "admin" && password === "12345") {
+    console.log("Login Successful");
+    if (userid === "admin") {
+        console.log("Welcome, Admin! You have full access.");
+    }
+}
+else if (userid === "user" && password  === "23456" ) {
+    console.log("Login Successful");
+    if (userid === "user") {
+    console.log("Welcome, User!");
+}  
+}
+  else {
+    console.log("Login Failed: Invalid User ID or Password");
+}
